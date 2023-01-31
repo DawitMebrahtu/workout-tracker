@@ -3,7 +3,7 @@ from django.contrib.auth.admin import UserAdmin
 
 from user.models import User
 
-"""
+
 class CustomUserAdmin(UserAdmin):
     list_display = ("id", "email", "username", 'is_active', 'is_staff', "created", "modified")
     list_filter = ("is_active", "is_staff", "groups")
@@ -21,4 +21,3 @@ class CustomUserAdmin(UserAdmin):
 
 
 admin.site.register(User, CustomUserAdmin)
-"""
