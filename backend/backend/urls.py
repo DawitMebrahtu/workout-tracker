@@ -21,11 +21,10 @@ urlpatterns = [
     path("api/", include((router.urls, 'api'))),
     path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
 ]
-
+"""
 if not settings.DEBUG:
     from django.urls import re_path
     from django.views.generic import TemplateView
 
     # In production serve static files for React application from the root path.
     urlpatterns += re_path(".*", TemplateView.as_view(template_name="index.html")),
-"""
