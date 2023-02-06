@@ -15,13 +15,13 @@ router.registry.extend(core_router.registry)
 router.register(r'user', UserViewSet, basename='user')
 
 schema_view = get_schema_view(openapi.Info(title="Gym Log API", default_version='v1'), public=True)
-
+"""
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("api/", include((router.urls, 'api'))),
     path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
 ]
-"""
+
 if not settings.DEBUG:
     from django.urls import re_path
     from django.views.generic import TemplateView
