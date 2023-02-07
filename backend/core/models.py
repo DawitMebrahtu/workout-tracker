@@ -28,7 +28,7 @@ class Profile(models.Model):
     def __str__(self):
         return f"Profile(user={self.user.username}, weight_system={self.weight_system})"
 
-"""
+
 class Exercise(models.Model):
     BODY_PARTS = (
         ('Forearms', 'Forearms'),
@@ -75,7 +75,7 @@ class Exercise(models.Model):
     def __str__(self):
         return f"Exercise(body_part={self.body_part}, equipment={self.equipment}, name={self.name}, user={self.user}')"
 
-
+"""
 class Workout(IndexedTimeStampedModel):
     STATUSES = (
         ('Started', 'Started'),

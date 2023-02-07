@@ -19,7 +19,7 @@ class ProfileSerializer(serializers.ModelSerializer):
         instance.save()
         return instance
 
-"""
+
 class ExerciseSerializer(serializers.ModelSerializer):
     class Meta:
         model = Exercise
@@ -30,7 +30,7 @@ class ExerciseSerializer(serializers.ModelSerializer):
         instance = Exercise.objects.create(user=request_user, **validated_data)
         return instance
 
-
+"""
 class WorkoutExerciseDetailSerializer(serializers.ModelSerializer):
     class Meta:
         model = WorkoutExerciseDetail
