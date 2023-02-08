@@ -30,7 +30,7 @@ class ExerciseSerializer(serializers.ModelSerializer):
         instance = Exercise.objects.create(user=request_user, **validated_data)
         return instance
 
-
+"""
 class WorkoutExerciseDetailSerializer(serializers.ModelSerializer):
     class Meta:
         model = WorkoutExerciseDetail
@@ -44,7 +44,7 @@ class WorkoutExerciseSerializer(serializers.ModelSerializer):
     class Meta:
         model = WorkoutExercise
         fields = ['id', 'exercise', 'name', 'workout_exercise_details']
-
+"""
 class WorkoutSerializer(serializers.ModelSerializer):
     workout_exercises = WorkoutExerciseSerializer(many=True, required=False)
 
