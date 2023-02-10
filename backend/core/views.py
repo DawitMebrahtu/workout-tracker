@@ -29,7 +29,7 @@ class ExerciseViewSet(viewsets.ModelViewSet):
         return self.queryset.filter(Q(user=self.request.user.id) | Q(user=None)).order_by('name')
 
     @action(detail=False, methods=['get'])
-    def body_parts(self, request):
+    def body_parts(self, request): 
         return Response(Exercise.body_part_list, status=status.HTTP_200_OK)
 
     @action(detail=False, methods=['get'])
