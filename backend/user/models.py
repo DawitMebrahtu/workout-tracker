@@ -3,7 +3,6 @@ from django.db import models
 
 from common.models import IndexedTimeStampedModel
 
-
 class UserManager(BaseUserManager):
     def create_user(self, username, email, password=None, **kwargs):
         email = self.normalize_email(email)
