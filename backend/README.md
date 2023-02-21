@@ -1,5 +1,6 @@
 # Workout Log (backend)
 
+
 ## Local development
 
 Setup local environment for the development process in the current directory `workout-log/backend`.
