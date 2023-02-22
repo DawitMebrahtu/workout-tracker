@@ -36,7 +36,7 @@ class ExerciseViewSet(viewsets.ModelViewSet):
     def equipment(self, request):
         return Response(Exercise.equipment_list, status=status.HTTP_200_OK)
 
-"""
+
 class WorkoutViewSet(viewsets.ModelViewSet):
     permission_classes = (IsAuthenticated, IsOwner,)
     http_method_names = ['get', 'post', 'delete']
@@ -45,4 +45,4 @@ class WorkoutViewSet(viewsets.ModelViewSet):
 
     def get_queryset(self):
         return self.queryset.filter(user=self.request.user.id)
-"""
+
