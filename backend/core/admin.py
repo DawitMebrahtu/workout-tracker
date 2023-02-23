@@ -24,9 +24,8 @@ class WorkoutExerciseDetailAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Profile, ProfileAdmin)
-"""
+
 admin.site.register(Exercise, ExerciseAdmin)
 admin.site.register(Workout, WorkoutAdmin)
 admin.site.register(WorkoutExercise, WorkoutExerciseAdmin)
 admin.site.register(WorkoutExerciseDetail, WorkoutExerciseDetailAdmin)
-"""
