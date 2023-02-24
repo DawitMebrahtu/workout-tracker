@@ -7,6 +7,7 @@ class ProfileAdmin(admin.ModelAdmin):
     list_display = ('id', 'user', 'weight_system')
 
 
+    
 class ExerciseAdmin(admin.ModelAdmin):
     list_display = ('id', 'body_part', 'name', 'equipment', 'description', 'user')
 
