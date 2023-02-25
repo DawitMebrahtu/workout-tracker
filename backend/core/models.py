@@ -89,7 +89,7 @@ class Workout(IndexedTimeStampedModel):
     def __str__(self):
         return f"Workout(user={self.user.username}, created={self.created})"
 
-"""
+
 class WorkoutExercise(models.Model):
     workout = models.ForeignKey(Workout, related_name="workout_exercises", on_delete=models.CASCADE)
     exercise = models.ForeignKey(Exercise, on_delete=models.CASCADE)
@@ -108,4 +108,3 @@ class WorkoutExerciseDetail(models.Model):
     def __str__(self):
         return f"WorkoutExerciseDetail(workout_exercise={self.workout_exercise.exercise.name}, " \
                f"sets={self.sets}, reps={self.reps}, weight={self.weight})"
-"""
