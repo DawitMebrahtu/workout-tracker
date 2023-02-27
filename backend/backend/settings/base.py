@@ -7,6 +7,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', get_random_secret_key())
 
 BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../"))
 
+
 ADMINS = (("Admin", "vlad.moroshan@gmail.com"),)
 
 ALLOWED_HOSTS = ['*']
